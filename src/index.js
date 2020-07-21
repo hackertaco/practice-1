@@ -11,7 +11,7 @@ const store = createStore(rootReducer, composeWithDevtools);
 console.log(store.getState());
 ReactDOM.render(
   <React.StrictMode>
-    <Provider>
+    <Provider store={store}>
       <App />
     </Provider>
   </React.StrictMode>,
